@@ -1,0 +1,15 @@
+void tri(float x, float y, float l){
+  triangle(x,y,x+l/2, y-sin(radians(60))*l,x+l,y);
+}
+void draw(){
+  sierpinski(order,x,y,length);
+}
+
+void sierpinski(int n, float x, float y, float l){
+  if (n == 0) tri(x,y,l);
+  else{
+  sierpinski(n-1,x,y,l/2);
+  sierpinski(n-1,x+l/4, y-sin(radians(60))*l/2,l/2);
+  sierpinski(n-1,x+l/2,y,l/2);
+  }
+}
