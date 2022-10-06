@@ -1,13 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void saludar(){
-  printf("Hola\n");
-}
-
-
-
-int main(void) {
-  saludar();
-  return 0;
+int array(int array[], int longitud){
+  
 }
